@@ -1,0 +1,11 @@
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\obj\Debug\netcoreapp2.0\RacquetSwingers.csproj.CoreCompileInputs.cache
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\obj\Debug\netcoreapp2.0\RacquetSwingers.AssemblyInfoInputs.cache
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\obj\Debug\netcoreapp2.0\RacquetSwingers.AssemblyInfo.cs
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\bin\Debug\netcoreapp2.0\RacquetSwingers.deps.json
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\bin\Debug\netcoreapp2.0\RacquetSwingers.runtimeconfig.json
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\bin\Debug\netcoreapp2.0\RacquetSwingers.runtimeconfig.dev.json
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\bin\Debug\netcoreapp2.0\RacquetSwingers.dll
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\bin\Debug\netcoreapp2.0\RacquetSwingers.pdb
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\obj\Debug\netcoreapp2.0\RacquetSwingers.dll
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\obj\Debug\netcoreapp2.0\RacquetSwingers.pdb
+C:\NeilDaDev\RacquetSwingers\RacquetSwingers\obj\Debug\netcoreapp2.0\RacquetSwingers.csprojResolveAssemblyReference.cache
