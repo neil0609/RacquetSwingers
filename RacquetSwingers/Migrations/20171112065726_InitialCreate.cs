@@ -22,9 +22,6 @@ namespace RacquetSwingers.Migrations
                 {
                     table.PrimaryKey("PK_RacquetSwinger", x => x.ID);
                 });
-
-            //migrationBuilder.Sql("INSERT"); you can put additional code for what you need
-            //migrationBuilder.CreateIndex();
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

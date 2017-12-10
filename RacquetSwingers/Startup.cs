@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using RacquetSwingers.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace RacquetSwingers
 {
@@ -30,10 +32,21 @@ namespace RacquetSwingers
             services.AddSingleton(Configuration);
             // Add IoC
             // services.AddSingleton<IGreeter, Greeter>();
+
+            // injecting ioc and service
             // services.AddScoped<IRetaurantData, SqlRestaurantData>();
             // Adding EntityFrameWork DbContext
-            services.AddDbContext<RacquetSwingersDbContext>(options => 
+            services.AddDbContext<RacquetSwingersDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("RacquetSwingersCS")));
+
+            services.AddDbContext<IdentityDbContext>(options => 
+                    options.UseSqlServer(Configuration.GetConnectionString("RacquetSwingersCS"),
+                    optionsBuilder => optionsBuilder.MigrationsAssembly("AspNetIdentityFromScratch")));
+                    //optionsBuilder => optionsBuilder.MigrationsAssembly()));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                    .AddEntityFrameworkStores<IdentityDbContext>()
+                    .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,7 +65,9 @@ namespace RacquetSwingers
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseIdentity();
             app.UseStaticFiles();
+            app.UseMvcWithDefaultRoute();
 
             app.UseMvc(routes =>
             {
@@ -60,6 +75,8 @@ namespace RacquetSwingers
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            
         }
     }
 }

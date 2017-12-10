@@ -11,7 +11,7 @@ using System;
 namespace RacquetSwingers.Migrations
 {
     [DbContext(typeof(RacquetSwingersDbContext))]
-    [Migration("20171109075914_InitialCreate")]
+    [Migration("20171112065726_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
